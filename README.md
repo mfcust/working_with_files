@@ -18,12 +18,12 @@ Lastly, you must always close your file! If you leave it open, it will make your
 ```
 f.close()
 ```
-There is a way to interact with files without closing them, and this method is probably best practice. It uses what's known as a context editor, and automatically closes the file after use. This looks like the following:
+There is a way to interact with files without having to explicity close them, and this method is probably best practice. It uses what's known as a context editor, and automatically closes the file after use. This looks like the following:
 ```
 with open('example.txt', 'r') as f:
   print(f.read())
 ```
-This accomplishes the same thing as the above code where you create a file object, open the file, read the file, and close the file. Anything that you want to do before closing the file must be indented like the print(f.read()) line. Once you stop indenting, the file closes.
+This accomplishes the same thing as the above code where you create a file object, open the file, read the file, and close the file. Anything that you want to do before closing the file must be indented like the print(f.read()) line. Once you stop indenting, the file closes. You can use whicheevr method you prefer, though this one may be easier to do in repl.it since you don't have to include a f.close() after every question.
 
 Navigate to the python file to do more with files!
 
